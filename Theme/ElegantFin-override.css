@@ -1,0 +1,51 @@
+:root {
+    --purpleOverride: #560BAD;
+    --activeColor: var(--purpleOverride);
+    --btnMiniPlayColor: var(--purpleOverride);
+    --btnPlayBorderColor: var(--purpleOverride);
+    --greenOverride: #61AD0B;
+    --borderColor: #2b2d42;
+    --lighterBorderColor: #8d99ae;
+    --checkboxCheckedBgColor: var(--purpleOverride);
+    --uiAccentColor: var(--purpleOverride);
+}
+
+/* show home icon in the header */
+.headerHomeButton { display: block; }
+
+/*Remove header tabs, not on home page*/
+.skinHeader:not(.noHomeButtonHeader) .headerTabs.sectionTabs .emby-tabs button.emby-tab-button{
+    visibility: hidden;
+}
+
+/* change hover to darker not lighter */
+.card.card-hoverable:hover .cardImageContainer{
+    filter: brightness(0.5);
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator {
+    background: var(--purpleOverride);
+}
+
+.playedIndicator {
+    background: var(--greenOverride);
+}
+
+.card.card-hoverable:hover .cardScalable {
+    border-color: var(--lighterBorderColor) !important;
+}
+
+.cardOverlayContainer .cardOverlayFab-primary {
+    height: initial;
+    width: initial;
+    border: none;
+}
+
+.upNextDialog-title {
+    width: 100%;
+    display: flex;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
