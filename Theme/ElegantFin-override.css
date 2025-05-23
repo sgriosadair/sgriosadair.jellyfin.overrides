@@ -49,3 +49,12 @@
     white-space: normal;
     overflow-wrap: break-word;
 }
+
+.layout-desktop .cardOverlayButton-br {
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    right: 0.5rem;
+    bottom: initial;
+    justify-content: center;
+}
