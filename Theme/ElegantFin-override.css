@@ -51,6 +51,7 @@
 }
 
 .layout-desktop .cardOverlayButton-br {
+    display: flex !important;
     flex-direction: column;
     height: 100%;
     top: 0;
