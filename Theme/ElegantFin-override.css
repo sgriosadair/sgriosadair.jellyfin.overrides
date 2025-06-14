@@ -1,13 +1,16 @@
 :root {
     --purpleOverride: #560BAD;
-    --activeColor: var(--purpleOverride);
-    --btnMiniPlayColor: var(--purpleOverride);
-    --btnPlayBorderColor: var(--purpleOverride);
     --greenOverride: #61AD0B;
     --borderColor: #2b2d42;
     --lighterBorderColor: #8d99ae;
+    --activeColor: var(--purpleOverride);
+    --btnMiniPlayColor: var(--purpleOverride);
+    --btnPlayBorderColor: var(--purpleOverride);
     --checkboxCheckedBgColor: var(--purpleOverride);
     --uiAccentColor: var(--purpleOverride);
+    --btnSubmitColor: var(--purpleOverride);
+    --checkboxCheckedBgColor: var(--purpleOverride);
+    --btnSubmitBorderColor: var(--borderColor);
 }
 
 /* show home icon in the header */
