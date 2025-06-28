@@ -2,4 +2,7 @@
 	.starRatingContainer {
 		display: none;
 	}
+	.mediaInfoCriticRating {
+		display: none;
+	}
 }
