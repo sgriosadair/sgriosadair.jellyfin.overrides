@@ -62,3 +62,8 @@
     bottom: initial;
     justify-content: center;
 }
+
+.itemMiscInfo {
+    min-height: 24px;
+    align-items: center !important;
+}
