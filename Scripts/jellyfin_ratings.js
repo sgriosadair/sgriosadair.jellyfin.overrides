@@ -99,11 +99,22 @@ if (typeof GM_xmlhttpRequest === 'undefined') {
     if (spots.length) {
       spots.forEach(el => insert(el, type, tmdbId));
     } else {
-      document.querySelectorAll('div.mediaInfoItem').forEach(el => {
-        if (/^\d+.*m$/i.test(el.textContent.trim())) {
-          insert(el, type, tmdbId);
-        }
-      });
+      // Find all elements with the class 'mediaInfoItem'
+      const mediaInfoItems = document.querySelectorAll('div.mediaInfoItem');
+      
+      // Check if any such elements were found on the page
+      if (mediaInfoItems.length > 0) {
+        // Get the very last element from the list of found items
+        const lastMediaInfoItem = mediaInfoItems[mediaInfoItems.length - 1];
+      
+        // Use this last item as the anchor for the insert() function
+        insert(lastMediaInfoItem, type, tmdbId);
+      }
+      // document.querySelectorAll('div.mediaInfoItem').forEach(el => {
+      //   if (/^\d+.*m$/i.test(el.textContent.trim())) {
+      //     insert(el, type, tmdbId);
+      //   }
+      // });
     }
   }
 
