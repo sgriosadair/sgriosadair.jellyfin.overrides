@@ -66,4 +66,5 @@
 .itemMiscInfo {
     min-height: 24px;
     align-items: center !important;
+    margin-top: .6em;
 }
