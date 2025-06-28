@@ -110,11 +110,6 @@ if (typeof GM_xmlhttpRequest === 'undefined') {
         // Use this last item as the anchor for the insert() function
         insert(lastMediaInfoItem, type, tmdbId);
       }
-      // document.querySelectorAll('div.mediaInfoItem').forEach(el => {
-      //   if (/^\d+.*m$/i.test(el.textContent.trim())) {
-      //     insert(el, type, tmdbId);
-      //   }
-      // });
     }
   }
 
